@@ -1,0 +1,17 @@
+//button
+
+.new-button-group a:first-child {
+    margin-left: 0;
+}
+.new-btn {
+    color: white;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    margin-left: 1.5rem;
+}
+.new-btn--blue {
+    background-color: #616ae8;
+}
+.new-btn--green {
+    background-color: #20e5a7;
+}

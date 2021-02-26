@@ -1,0 +1,46 @@
+.introduce-card {
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: currentColor;
+    opacity: 0.1;
+    transform: translate(-50%, -40%);
+  }
+
+  @include media("<tablet") {
+    margin-bottom: 2rem;
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.introduce-card__title {
+  font-size: 2rem;
+  font-weight: $f-semibold;
+  color: $text-default;
+  margin-bottom: 3rem;
+}
+
+.introduce-card__desc {
+  color: $text-gray;
+  line-height: 2.6rem;
+  @include media("<desktop") {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}

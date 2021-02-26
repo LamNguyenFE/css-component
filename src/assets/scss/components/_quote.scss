@@ -1,0 +1,72 @@
+.quote__icon {
+  color: $primary-color;
+  font-size: px(100);
+  position: relative;
+  z-index: 1;
+  padding-left: px(20);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: px(80);
+    height: px(80);
+    z-index: -1;
+    border-radius: 50%;
+    background: $light-orange;
+  }
+
+  @include media("<tablet") {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+
+    &::after {
+      width: px(50);
+      height: px(50);
+      top: 2px;
+      left: 2px;
+    }
+  }
+  @include media("<desktop") {
+    font-size: 8rem;
+
+    &::after {
+      width: px(70);
+      height: px(70);
+      top: 2px;
+      left: 2px;
+    }
+  }
+}
+
+.quote__desc {
+  font-size: px(16);
+  line-height: px(25);
+}
+
+.quote__author {
+  font-weight: $f-bold;
+  font-size: px(14);
+  color: $text-default;
+  padding-left: px(30);
+  margin-bottom: px(40);
+  margin-top: px(30);
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 2rem;
+    height: 1px;
+    background-color: $text-default;
+  }
+
+  @include media("<tablet") {
+    margin-top: px(15);
+    margin-bottom: px(20);
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  margin-bottom: $mb-8;
+  position: relative;
+  padding: px(15) px(40);
+
+  @include media("<=tablet") {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include media("<desktop") {
+    margin-bottom: 2rem;
+  }
+
+  .row {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.header__logo {
+  @include media("<=tablet") {
+    padding-left: px(20);
+  }
+  img {
+    height: px(66);
+  }
+}

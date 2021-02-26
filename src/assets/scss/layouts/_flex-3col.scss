@@ -1,0 +1,29 @@
+.flex-3c-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 -15px;
+
+    @include media("<desktop") {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media("<tablet") {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flex-3c__box {
+    width: calc(33.33% - 30px);
+    margin: 15px;
+
+    @include media("<desktop") {
+        width: calc(50% - 30px);
+    }
+
+    @include media("<tablet") {
+        width: 100%;
+    }
+}

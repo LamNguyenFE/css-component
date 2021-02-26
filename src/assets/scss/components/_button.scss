@@ -1,0 +1,54 @@
+.btn {
+  padding: px(15) px(12) !important;
+  display: inline-block;
+
+  background-color: $text-white;
+  color: $text-white;
+
+  outline: none;
+  vertical-align: middle;
+  text-align: center;
+
+  font-size: 1.6rem;
+  font-weight: $f-semibold;
+  cursor: pointer;
+
+  @include media("<=tablet") {
+    display: inline-block !important;
+    margin-bottom: px(10);
+  }
+}
+
+.btn--rounded {
+  border-radius: px(10);
+}
+
+.btn--green {
+  background-color: $light-green;
+}
+
+.btn--primary {
+  background-color: $primary-color;
+}
+
+.btn-group {
+  @include flex(center);
+
+  @include media("<desktop") {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    margin: 0 px(10) 0 px(20);
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include media("<desktop") {
+      margin-left: px(4);
+      margin-right: px(4);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.grid-3c-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    align-items: stretch;
+
+    @include media("<desktop") {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media("<tablet") {
+        grid-template-columns: 1fr;
+    }
+}

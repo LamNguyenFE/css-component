@@ -1,0 +1,29 @@
+.card {
+  display: block;
+  padding: px(30);
+  background-color: #fff;
+  border-radius: px(20);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media("<=tablet") {
+    padding: px(10);
+    width: 100% !important;
+    margin-bottom: px(10);
+  }
+}
+.card__title {
+  margin-bottom: px(10);
+  font-weight: $f-semibold;
+  font-size: px(18);
+  color: $text-default;
+
+  @include media("<tablet") {
+    margin-top: px(20);
+  }
+}
+
+.card__desc {
+  line-height: px(24);
+  @include limit-line-text(3);
+}

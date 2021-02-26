@@ -1,0 +1,89 @@
+.bg {
+  background-color: $light-blue;
+  z-index: -1;
+  position: absolute;
+}
+.bg--left {
+  width: 40%;
+  height: 82%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 4rem 4rem 0;
+}
+
+.bg--right {
+  width: 40%;
+  height: 82%;
+
+  bottom: 0;
+  right: 0;
+
+  border-radius: 4rem 0 0 4rem;
+}
+
+.bg--full {
+  height: 100%;
+  background-color: $light-orange;
+  border-radius: 4rem;
+
+  @include setPositions(0, unset, px(20), px(20));
+
+  @include media("<=tablet") {
+    @include setPositions(unset, unset, 0, 0);
+  }
+}
+
+.bg--top-left {
+  width: 79px;
+  height: 79px;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  transform: translateX(-50%) translateY(calc(-50% + 1rem));
+}
+
+//
+.bg--color1 {
+  background-color: #fbe9e9;
+}
+
+.bg--color2 {
+  background-color: #e7faf9;
+}
+
+.bg--color3 {
+  background-color: #f5ecfd;
+}
+
+.bg--color4 {
+  background-color: #e7effb;
+}
+
+.bg--color5 {
+  background-color: #f5ecfd;
+}
+
+.bg--color6 {
+  background-color: #f5ecfd;
+}
+
+//ok
+.tab-bg {
+  @include media("<=tablet") {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    @include setPositions(0, unset, 0, unset);
+  }
+}
+
+//ok as well
+@include media("<=phone") {
+  .mb-bg {
+    background-color: deeppink;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    @include setPositions(0, unset, 0, unset);
+  }
+}

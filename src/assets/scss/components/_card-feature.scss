@@ -1,0 +1,15 @@
+.card-feature {
+    padding: 3rem;
+    background-color: white;
+    border: 1px solid #f2f2f3;
+    border-radius: 20px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #2e2a41;
+    }
+    &__desc {
+    }
+}

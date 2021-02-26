@@ -1,0 +1,80 @@
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  @include media("<desktop") {
+    padding: px(30) !important;
+    margin-bottom: px(30) !important;
+  }
+  @include media("<tablet") {
+    padding: px(20) px(10) !important;
+  }
+}
+
+/*
+ introduce
+*/
+.introduce {
+  margin-bottom: $mb-8;
+
+  .introduce-card {
+    width: calc(100% - 10px);
+  }
+}
+
+// trusted
+.trusted {
+  padding: 0 px(85) px(30);
+  margin-bottom: px(30);
+
+  @include media("<desktop") {
+    padding-top: px(30);
+    padding-bottom: px(30);
+  }
+
+  .heading {
+    @include media("<=tablet") {
+      margin-bottom: px(40);
+    }
+  }
+}
+.trusted-content {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.trusted-content__image {
+  margin: 0 auto;
+  border-radius: px(10);
+  box-shadow: 0px 36px 44px rgba($color: #282a54, $alpha: 0.13);
+}
+// feature
+.feature {
+  padding: px(80) px(70) px(90);
+
+  @include media("<=tablet") {
+    padding-top: px(30);
+    padding-bottom: px(30);
+  }
+  @include media("<tablet") {
+    width: 100%;
+  }
+}
+
+// post
+.post {
+  padding: 10rem;
+
+  .heading {
+    @include media("<desktop") {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .category {
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+}

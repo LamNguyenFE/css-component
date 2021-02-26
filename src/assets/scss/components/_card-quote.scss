@@ -1,0 +1,17 @@
+.card-quote {
+    &__customer-name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-top: 29px;
+        font-weight: 700;
+    }
+    &__line {
+        width: 2rem;
+        height: 0.1rem;
+        border-top: 1px solid #d1d0d6;
+        margin-right: 1rem;
+    }
+}

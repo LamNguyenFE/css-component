@@ -1,0 +1,25 @@
+.intro-card {
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  padding-bottom: 3rem;
+}
+
+.intro-card__title {
+  font-size: 2rem;
+  font-weight: $f-semibold;
+  color: $text-default;
+  margin-bottom: 3rem;
+}
+
+.intro-card__desc {
+  color: $text-gray;
+  line-height: 2.6rem;
+  @include media("<desktop") {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}

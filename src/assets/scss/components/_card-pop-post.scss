@@ -1,0 +1,23 @@
+.card-pop-post {
+    background-color: white;
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px 6px 0px 0px;
+    }
+    &__info {
+        padding: 1rem 1.5rem;
+        position: relative;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #2e2a41;
+        @include limit-line-text(1);
+    }
+    &__desc {
+        font-size: px(12);
+        color: $text-gray;
+    }
+}

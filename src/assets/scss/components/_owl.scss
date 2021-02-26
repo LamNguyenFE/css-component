@@ -1,0 +1,9 @@
+.owl-theme .owl-dots {
+    text-align: left;
+    margin-top: 57px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #5e68f9;
+    transform: scale(1.3);
+}
