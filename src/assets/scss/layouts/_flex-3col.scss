@@ -5,17 +5,10 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0 -15px;
-
-    @include media("<desktop") {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @include media("<tablet") {
-        grid-template-columns: 1fr;
-    }
 }
 
-.flex-3c__box {
+.flex-3c__box,
+.flex-3c-row > * {
     width: calc(33.33% - 30px);
     margin: 15px;
 
